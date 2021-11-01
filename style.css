@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen:wght@300&family=Roboto&family=Roboto+Mono:wght@300&family=Source+Code+Pro&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+header.sticky {
+  padding: 15px 100px;
+  background: rgba(255, 255, 255, 0.9);
+}
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li.active {
+  background: #a64ff8;
+  border-radius: 15px;
+  padding: 5px 5px;
+  transition: all 0.3s ease;
+}
+
+header ul li:nth-child(1).active {
+  left: 0;
+  opacity: 1;
+}
+header ul li:nth-child(2).active {
+  left: 0;
+  opacity: 1;
+}
+header ul li:nth-child(3).active {
+  left: 0;
+  opacity: 1;
+}
+header ul li:nth-child(4).active {
+  left: 0;
+  opacity: 1;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 55px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 400;
+  transition: 0.6s;
+}
+
+header.sticky ul li a {
+  color: rgb(58, 58, 58);
+}
+
+header.sticky .logo {
+  color: rgb(58, 58, 58);
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 19, 36);
+  background: url(./chris-j-davis-PT_9ux0j-x4-unsplash.jpg);
+  height: 1000px;
+}
+
+.textBox {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  font-family: "Source Code Pro", monospace;
+}
+
+.about {
+  height: 100vh;
+  padding: 5% 5%;
+  color: rgb(255, 255, 255);
+  background: rgb(34, 34, 34);
+}
+
+.abtContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  flex-direction: column;
+}
+.abtCard .title {
+  margin-top: 10%;
+}
+
+.abtInfo {
+  width: 600px;
+  margin: 5% 5%;
+  text-align: left;
+  line-height: 25px;
+  letter-spacing: 1.1px;
+}
+
+.eduInfo {
+  width: 600px;
+  margin: 0 5%;
+  text-align: left;
+  line-height: 25px;
+  letter-spacing: 1.1px;
+}
+
+.Projects {
+  height: 100vh;
+  color: white;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(109, 23, 179, 1) 100%
+  );
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Projects h3 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+.Projects .card {
+  cursor: pointer;
+  max-width: 90%;
+  padding: 50px;
+  margin: 1%;
+  border-radius: 10px;
+  background-color: rgba(195, 248, 255, 0.3);
+}
+
+.contact {
+  position: relative;
+  color: white;
+  background: rgb(34, 34, 34);
+  height: 100vh;
+}
+
+.contactField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h1 {
+  margin-top: 150px;
+  margin-left: 5%;
+  font-size: 3rem;
+  text-align: center;
+}
+
+form {
+  margin-top: 50px;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+
+.form-control {
+  padding: 5px;
+  margin-top: 10px;
+  min-width: 600px;
+  background: rgba(223, 247, 255, 0.8);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  border-bottom: 1px solid blueviolet;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form-control-submit {
+  padding: 10px;
+  color: #ffffff;
+  background: #a64ff8;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-control-submit:hover {
+  background: #aa6de4;
+  transform: scale(1.1);
+}
+
+.contactDetail {
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: white;
+  background: rgb(155, 155, 155);
+  padding: 10px;
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 40px 40px;
+  }
+  header.sticky {
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .hero {
+    background: url(./chris-j-davis-PT_9ux0j-x4-unsplashTab.jpg);
+  }
+
+  header ul li a {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 12px;
+  }
+  header.sticky {
+    padding: 15px 10px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .hero {
+    background: url(./chris-j-davis-PT_9ux0j-x4-unsplashMob.jpg);
+  }
+
+  header ul li a {
+    margin: 0 10px;
+  }
+
+  .Projects h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+}
