@@ -16,5 +16,5 @@ form.onsubmit = (e)=> {
 let formData = new FormData(form);
 xhr.send(formData);
 
-    xhr.send();
+    
 }
