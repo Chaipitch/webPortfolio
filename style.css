@@ -233,7 +233,7 @@ form {
   margin-bottom: 10px;
 }
 
-.form-control-submit {
+.submit {
   padding: 10px;
   color: #ffffff;
   background: #a64ff8;
@@ -242,7 +242,7 @@ form {
   transition: all 0.3s ease;
 }
 
-.form-control-submit:hover {
+.submit:hover {
   background: #aa6de4;
   transform: scale(1.1);
 }

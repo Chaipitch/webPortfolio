@@ -96,12 +96,14 @@
                 <h1>Contact Me!</h1>
                 <div class="contactField">
                     <form id="contact-form" method="post" action="contact-form-handler.php">
-                        <input name="name" type="text" class="form-control" placeholder="Name" required>
+                        <input name="name" type="text" class="form-control" placeholder="Name" >
                         <br>
-                        <input name="email" type="email" class="form-control" placeholder="Email" required>
+                        <input name="email" type="email" class="form-control" placeholder="Email" >
                         <br>
-                        <textarea name="message" class="form-control" cols="30" rows="4" placeholder="Message Me" required> </textarea><br>
-                        <input type="submit" class="form-control-submit" value="SEND MESSAGE">
+                        <textarea name="message" class="form-control" cols="30" rows="4" placeholder="Message Me" > </textarea><br>
+                        <div class="button-area">
+                            <button class="submit" type='submit'>Send Message</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -127,5 +129,6 @@
 })
   </script>
     <script src = './app.js'></script>
+    <script src = './form.js'></script>
 </body>
 </html>
